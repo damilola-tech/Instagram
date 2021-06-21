@@ -9,17 +9,15 @@
         <h1>Instagram</h1>
         <h3>Upload image here:</h3>
         <h4>Choose file </h4>
-        <form method="photos" enctype="multipart/form-data">
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {{ photos_form }}
-            <input type="submit" name="submit" value="Submit">
         </form>
     </div>
 
     {% for photo in photos %}
         <div class="">
             <img src="{{ photo.image.url }}">
-<!--            {{ photo.image.url }}-->
         </div>
     {% endfor %}
 </body>

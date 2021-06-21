@@ -1,9 +1,67 @@
-.main {
-    flex: auto;
-    background: aliceblue;
+/*.main {*/
+/*    flex: auto;*/
+/*    background: aliceblue;*/
+/*}*/
+
+/*.instagram {*/
+/*    color: #000;*/
+/*}*/
+
+body{
+    margin: 0px;
 }
 
-.instagram {
-    color: #000;
+.body{
+    width: 100%;
+    height: 750px;
+    background-color: #EEE;
 }
 
+h1{
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 0px;
+    padding: 10px;
+}
+
+.upload-image-form{
+    text-align: center;
+    padding: 10px;
+    background-color: #AAA;
+}
+
+.photos{
+    width: 96%;
+    height: 100%;
+    background-color: #FFF;
+    margin: 1%;
+    padding: 1%;
+}
+
+.photo{
+    width: 24.8%;
+    float: left;
+    height: 450px;
+    /*background-color: inherit;*/
+
+    border: 1px solid #CCC;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: radial-gradient(white, #EEE);
+
+}
+
+.photo:hover{
+    transform: scale(1.1);
+    border: 1px solid #555;
+    background-image: radial-gradient(white, white);
+}
+
+.photo > img{
+    max-width: 98%;
+    max-height: 98%;
+    margin: 1%;
+}
